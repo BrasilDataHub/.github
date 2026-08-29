@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📚 Como este backlog funciona
+    url: https://github.com/BrasilDataHub/docs/blob/main/governance/WORK-MANAGEMENT.md
+    about: Taxonomia, lifecycle, metadados e o que autoriza execução. Leia antes de abrir a primeira issue.
+  - name: 🤖 Protocolo para agentes
+    url: https://github.com/BrasilDataHub/docs/blob/main/engineering/AGENT-WORK-PROTOCOL.md
+    about: Como um agente cria, escolhe tipo, executa, atualiza e conclui uma issue.

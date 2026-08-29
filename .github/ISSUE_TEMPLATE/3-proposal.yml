@@ -1,0 +1,44 @@
+name: "📐 Proposal"
+description: "Solução elaborada submetida a avaliação antes de virar trabalho. Não autoriza implementação."
+type: "Proposal"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use quando a mudança é relevante o bastante para ser **decidida** antes de ser feita:
+        arquitetura, contrato, ownership, política. Aceita, vira uma ADR e gera o trabalho.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: O que está errado ou faltando hoje. Descreva o estado atual, não a solução.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: A mudança sugerida, com detalhe suficiente para ser avaliada.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: O que mais foi cogitado e por que foi descartado. Uma proposta sem alternativa raramente foi analisada.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto e riscos
+      description: O que muda, quem quebra, o que é irreversível, custo de migração.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decisão requerida
+      description: A pergunta exata que precisa de um sim ou não.
+    validations:
+      required: true

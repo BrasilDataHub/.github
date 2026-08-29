@@ -1,0 +1,53 @@
+name: "🔬 Research"
+description: "Investigação cujo entregável é conhecimento ou uma recomendação. Não autoriza implementação."
+type: "Research"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Research **produz conclusão, não código**. A recomendação daqui não vira
+        implementação automaticamente: ela gera uma Proposal, uma Feature ou uma Task.
+  - type: textarea
+    id: question
+    attributes:
+      label: Pergunta a responder
+      description: Uma pergunta, específica e verificável. É o que fecha esta issue.
+      placeholder: "O CNEFE do Censo 2022 permite classificar endereço residencial com precisão utilizável?"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Por que isto está sendo investigado agora, e o que já se sabe.
+    validations:
+      required: true
+  - type: textarea
+    id: hypotheses
+    attributes:
+      label: Hipóteses
+      description: O que se espera encontrar. Registrar antes evita confirmar o que já se queria.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Fontes e referências iniciais
+  - type: dropdown
+    id: deliverable
+    attributes:
+      label: Entregável
+      description: O que existirá quando esta issue fechar.
+      options:
+        - "Recomendação no corpo da issue"
+        - "Documento novo em docs/"
+        - "Atualização de documento existente"
+        - "ADR (decisão durável)"
+        - "Proposal para avaliação"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Critério de conclusão
+      description: Como saber que a pergunta foi respondida — e não apenas explorada.
+    validations:
+      required: true

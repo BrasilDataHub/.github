@@ -1,0 +1,57 @@
+name: "🐛 Bug"
+description: "Comportamento existente que diverge do esperado."
+type: "Bug"
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: Comportamento atual
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Onde ocorre — produção, local, versão, navegador, componente.
+      placeholder: "produção · apps/web · Chrome 140"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências
+      description: Logs, requisição e resposta, print, ID de trace, URL afetada.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto
+      options:
+        - "Perda ou exposição indevida de dado"
+        - "Funcionalidade indisponível, sem contorno"
+        - "Funcionalidade degradada, com contorno"
+        - "Cosmético ou de baixa consequência"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Como saber que foi corrigido
+      description: A verificação que reprova hoje e passa depois.
+    validations:
+      required: true

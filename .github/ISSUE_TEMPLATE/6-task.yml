@@ -1,0 +1,25 @@
+name: "🔧 Task"
+description: "Trabalho concreto que não é feature nem bug: infra, manutenção, documentação, migração, refactor."
+type: "Task"
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: O que precisa ser feito
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Por quê
+      description: Uma ou duas frases. Tarefa sem motivo declarado costuma ser trabalho que ninguém pediu.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Critério de pronto
+      value: |
+        - [ ]
+    validations:
+      required: true

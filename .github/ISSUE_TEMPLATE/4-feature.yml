@@ -1,0 +1,44 @@
+name: "✨ Feature"
+description: "Capacidade nova ou alteração funcional. Executável somente quando Stage = Ready."
+type: "Feature"
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Qual necessidade real isto atende. Sem problema declarado, não há como avaliar a solução.
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo e comportamento esperado
+      description: O que passa a ser possível, do ponto de vista de quem usa.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      description: O que entra e, principalmente, o que **não** entra.
+      value: |
+        **Entra:**
+
+        **Não entra:**
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Verificáveis, um por linha. É o contrato de conclusão.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Referências
+      description: Documentos, ADRs, issues relacionadas, medições.

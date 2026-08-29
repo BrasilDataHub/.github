@@ -1,0 +1,40 @@
+name: "🗺️ Epic"
+description: "Objetivo guarda-chuva realizado por sub-issues. Nunca é executado diretamente."
+type: "Epic"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Um Epic **não é implementado**: ele é decomposto. O trabalho vive nas sub-issues,
+        ligadas por *Create sub-issue* / *Add sub-issue* — nunca por lista de links no corpo.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo
+      description: O resultado que este épico entrega, em uma ou duas frases.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Por que este objetivo existe e o que ele destrava.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      value: |
+        **Entra:**
+
+        **Não entra:**
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Como saber que o épico terminou
+      description: O estado observável do produto. Não é "todas as sub-issues fechadas".
+    validations:
+      required: true

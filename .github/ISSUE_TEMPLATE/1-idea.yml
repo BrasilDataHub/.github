@@ -1,0 +1,31 @@
+name: "💡 Idea"
+description: "Registrar uma ideia, oportunidade ou problema percebido. Não autoriza implementação."
+type: "Idea"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Captura rápida. Só o primeiro campo é obrigatório — o resto preenche quem triar.
+        Uma Idea **não é trabalho aprovado**: nenhum agente a implementa.
+  - type: textarea
+    id: idea
+    attributes:
+      label: A ideia
+      description: O que é, em poucas linhas. Não precisa estar resolvida nem completa.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou oportunidade
+      description: Que dor ou ganho está por trás disso? Se ainda não souber, deixe em branco.
+  - type: textarea
+    id: references
+    attributes:
+      label: Referências
+      description: Links, concorrentes, prints, conversas, fontes.
+  - type: textarea
+    id: questions
+    attributes:
+      label: Perguntas em aberto
+      description: O que precisaria ser respondido antes de decidir alguma coisa.
